@@ -109,7 +109,7 @@ h2 {
 
 .license {
   height: 430px;
-  width: 360px;
+  max-width: 360px;
   margin-top: 1em;
   float: left;
 
@@ -121,6 +121,10 @@ h2 {
   .license {
     margin-left: 30px;
   }
+
+  .license--buy {
+    margin-top: 2em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -131,6 +135,10 @@ h2 {
   .license {
     margin-left: 25%;
     margin-right: 25%;
+  }
+
+  .license--buy {
+    margin-top: 0em;
   }
 }
 
@@ -166,7 +174,6 @@ h2 {
 .license--buy {
   width: 90%;
   padding: 1em;
-  margin-top: 2em;
 }
 
 .license--free {
