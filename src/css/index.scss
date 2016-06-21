@@ -1,0 +1,201 @@
+$std-black: rgb(0, 0, 0);
+$std-grey: rgb(134, 147, 158);
+$std-dark-grey: rgb(67, 72, 77);
+$std-light-grey: rgb(218, 222, 226);
+$std-green: rgb(125, 200, 85);
+$std-blue: rgb(57, 173, 209);
+$std-purple: rgb(131, 140, 199);
+$std-turqoise: rgb(83, 187, 179);
+
+body {
+  color: $std-grey;
+  text-align: center;
+}
+
+/* Override Bootstrap's default link styling */
+a {
+  color: inherit;
+}
+
+a:focus,
+a:hover {
+  color: $std-dark-grey;
+}
+
+/* Override Bootstrap's nav styling */
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: inherit;
+}
+
+h2 {
+  font-size: 3em;
+  color: $std-dark-grey;
+}
+
+.page {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.text-border-link {
+  color: inherit;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+
+  border-color: transparent;
+  transition: color 0.2s, border 0.2s;
+}
+
+.text-border-link:hover {
+  border-color: $std-black;
+}
+
+#header--logo--m {
+  font-size: 2em;
+}
+
+#header {
+  color: $std-grey;
+}
+
+#splash--description--statement {
+  font-size: 1.5em;
+}
+
+#splash--description--buy {
+  margin-top: 2em;
+  transition: 0.2s;
+}
+
+#graph {
+  height: 400px;
+  background-color: $std-light-grey;
+}
+
+#statement {
+  font-size: 1.75em;
+  border-bottom: 1px solid $std-light-grey;
+}
+
+#statement--buy {
+  margin-top: 3em;
+  padding: 1em 2em 1em 2em;
+}
+
+.testimonial {
+  text-align: left;
+}
+
+.testimonial--quote {
+  font-size: 1.75em;
+}
+
+.testimonial--name {
+  font-weight: bold;
+}
+
+.testimonial--position {
+  font-size: 0.8em;
+  color: $std-light-grey;
+}
+
+#choose-license {
+  background-color: rgb(244, 244, 244);
+  padding-left: 80px;
+}
+
+.license {
+  height: 430px;
+  width: 360px;
+  margin-top: 1em;
+  float: left;
+
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .license {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #choose-license {
+    padding-left: 0px;
+  }
+
+  .license {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+.license--description {
+  height: 230px;
+
+  padding: 1em;
+  border-bottom: 1px solid $std-light-grey;
+
+  h3 {
+    font-size: 2em;
+    color: $std-dark-grey;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+}
+
+.license--price {
+  margin: 1em;
+}
+
+.license--price--description {
+  text-align: left;
+}
+
+.license--price--amount {
+  font-size: 3em;
+  color: $std-dark-grey;
+}
+
+.license--buy {
+  width: 90%;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.license--free {
+  color: $std-green;
+}
+
+#email-signup input[type=email] {
+  color: $std-light-grey;
+  background-color: black;
+}
+
+#email-signup button[type=submit],
+#statement--buy,
+.license .license--buy {
+  color: white;
+  background-color: $std-green;
+}
+
+#email-signup--pitch {
+  font-size: 1.5em;
+}
+
+#footer {
+  color: $std-light-grey;
+  background-color: $std-grey;
+}
+
+#footer--logo {
+  /* FIXME: Ugly hack to get the logo image aligned. */
+  margin-top: -13px;
+}
+
